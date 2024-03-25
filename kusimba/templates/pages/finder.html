@@ -1,1 +1,47 @@
 {% load static %}
+        <style>
+            .container {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            }
+
+            .sidebar {
+            width: 200px;
+            padding: 20px;
+            }
+
+            .content {
+            flex: 1;
+            padding: 20px;
+            }
+
+            @media only screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+            }
+            }
+        </style>
+        <div class="container">
+        <div class="sidebar">
+            <h6>Course Topics</h6>
+            <label for="option1">
+            <input type="checkbox" id="option1"> Option 1
+            </label>
+            <label for="option2">
+            <input type="checkbox" id="option2"> Option 2
+            </label>
+            <label for="option3">
+            <input type="checkbox" id="option3"> Option 3
+            </label>
+        </div>
+        <div class="content">
+            <h2>Courses</h2>
+            <p>Courses content</p>
+            <div class="fs-1">Hello</div>
+        </div>
+        </div>
+        <!-- sidebar menu End -->
