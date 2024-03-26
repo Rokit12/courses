@@ -6,8 +6,18 @@
 {% include 'pages/navbar.html' %}
 <!-- Login Start -->
 <div class="container-fluid bg-registration py-5">
-    <div class="container py-5">
-        <div class="col-lg-5">
+    <style>
+        .container{
+            width: 40vw;
+        }
+        @media (max-width: 768px) {
+    .container {
+      width: 90vw;
+    }
+  }
+    </style>
+    <div class="container"> 
+        <div class="col">
             <div class="card border-0">
                 <div class="card-header bg-light text-center p-4">
                     <h1 class="m-0">Login Now</h1>
