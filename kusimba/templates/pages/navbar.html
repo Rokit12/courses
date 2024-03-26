@@ -45,22 +45,25 @@
                                     <a href="{% url 'certificate' %}" class="dropdown-item">Business Sprints</a>
                                 </div>
                             </div>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Account</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <!-- if authenticated -->
-                                    <a href="{% url 'account' %}" class="dropdown-item">My account</a>
-                                    <a href="single.html" class="dropdown-item">Wishlist</a>
-                                    <a href="single.html" class="dropdown-item">Cart</a>
-                                    <!-- if not -->
-                                    <a href="blog.html" class="dropdown-item">Login</a>
-                                    <a href="single.html" class="dropdown-item">Register</a>
-                                    <a href="single.html" class="dropdown-item">Cart</a>
-                                </div>
-                            </div>
+<!--                            <div class="nav-item dropdown">-->
+<!--                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Account</a>-->
+<!--                                <div class="dropdown-menu rounded-0 m-0">-->
+<!--                                    &lt;!&ndash; if authenticated &ndash;&gt;-->
+<!--                                    <a href="{% url 'account' %}" class="dropdown-item">My account</a>-->
+<!--                                    <a href="single.html" class="dropdown-item">Wishlist</a>-->
+<!--                                    <a href="single.html" class="dropdown-item">Cart</a>-->
+<!--                                    &lt;!&ndash; if not &ndash;&gt;-->
+<!--                                    <a href="blog.html" class="dropdown-item">Login</a>-->
+<!--                                    <a href="single.html" class="dropdown-item">Register</a>-->
+<!--                                    <a href="single.html" class="dropdown-item">Cart</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
                             <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
                         </div>
-                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Join Now</a>
+
+                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="{% url 'login' %}">Log In</a>
+                        &nbsp; &nbsp;
+                        <a class="btn btn-primary  py-2 px-3" href="{% url 'signup' %}">Join Now</a>
                     </div>
                 </nav>
             </div>
