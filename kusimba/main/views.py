@@ -9,3 +9,15 @@ def index(request):
 
 def finder(request):
     return render(request, 'course_finder.html')
+
+
+def details(request):
+    return render(request, 'course_details.html')
+
+
+def earn_certificate(request):
+    return render(request, 'earn_certificate.html')
+
+
+def account(request):
+    return render(request, 'account.html')

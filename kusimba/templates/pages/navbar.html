@@ -25,28 +25,31 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Courses for <br> individuals</a>
                                 <div class="dropdown-menu rounded-0 m-0">
                                     <a href="{% url 'finder' %}" class="dropdown-item">Course Finder</a>
-                                    <a href="#" class="dropdown-item">Course List</a>
+                                    <a href="{% url 'details' %}" class="dropdown-item" >Course List</a>
                                 </div>
                             </div>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Certificate <br> Programs</a>
                                 <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="blog.html" class="dropdown-item">Earn a certificate</a>
-                                    <a href="single.html" class="dropdown-item">Advanced Certificate</a>
+                                    <a href="{% url 'certificate' %}" class="dropdown-item">Earn a certificate</a>
+                                    <a href="{% url 'details' %}" class="dropdown-item">Advanced Certificate</a>
                                 </div>
                             </div>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Online <br> Courses</a>
                                 <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="blog.html" class="dropdown-item">Course Finder</a>
-                                    <a href="single.html" class="dropdown-item">Course Calendar</a>
+                                    <a href="{% url 'certificate' %}" class="dropdown-item">Live Online Courses</a>
+                                    <a href="{% url 'certificate' %}" class="dropdown-item">Live Online Experience</a>
+                                    <a href="{% url 'certificate' %}" class="dropdown-item">Self-Spaced Online Courses</a>
+                                    <a href="{% url 'certificate' %}" class="dropdown-item">Self Spaced Online Experience</a>
+                                    <a href="{% url 'certificate' %}" class="dropdown-item">Business Sprints</a>
                                 </div>
                             </div>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Account</a>
                                 <div class="dropdown-menu rounded-0 m-0">
                                     <!-- if authenticated -->
-                                    <a href="blog.html" class="dropdown-item">My account</a>
+                                    <a href="{% url 'account' %}" class="dropdown-item">My account</a>
                                     <a href="single.html" class="dropdown-item">Wishlist</a>
                                     <a href="single.html" class="dropdown-item">Cart</a>
                                     <!-- if not -->

@@ -1,0 +1,92 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+
+{% block content%}
+{% include 'pages/account.html' %}
+<style>
+    .card-responsive{
+    width: 100vw;
+    height: 50vh;
+    
+    }
+    .img-responsive{
+    align: center;
+    height: 50vh;
+    width: 60vw;
+    opacity: 0.4;
+    background-color: black;
+    }
+    .card-text,
+    .card-title{
+     color: black;
+    }
+
+</style>
+    <div class="card border-light text-bg-dark card-responsive">
+      <div class="text-center">
+        <img src="{% static 'img/logos.jpeg' %}" align="center" class="img-responsive" alt="...">
+      </div>
+
+      <div class="card-img-overlay">
+        <h5 class="card-title">Welcome, User</h5>
+        <p class="card-text">Welcome to the MIT Sloan Executive Education Community. While you're here, you can update your profile and communication preferences. Below are links enabling you to make a payment, change an enrollment, take a virtual tour or contact us. Through the navigation bar above, you'll be able to find your current and upcoming courses as well as enroll in an Executive Certificate and track your progress. Don't hesitate to reach out to us with any questions.
+          Enjoy your learning journey at Kusimba E-Learning Platform.
+          New On-Demand Courses Format Launched
+        </p>
+      </div>
+
+
+    <div class="container mt-4 p-5">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Update Profile</h5>
+            </div>
+            <img src="{% static 'img/user.jpg' %}" class="card-img-bottom" alt="...">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Make Payment</h5>
+            </div>
+            <img src="{% static 'img/payment.jpg' %}" class="card-img-bottom" alt="...">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Change an Enrollment</h5>
+            </div>
+            <img src="{% static 'img/enrollment.jpg' %}" class="card-img-bottom" alt="...">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Virtual Tour</h5>
+            </div>
+            <img src="{% static 'img/virtual.jpg' %}" class="card-img-bottom" alt="...">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Contact Us</h5>
+            </div>
+            <img src="{% static 'img/contactus.jpg' %}" class="card-img-bottom" alt="...">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Application Question</h5>
+            </div>
+            <img src="{% static 'img/questions.jpg' %}" class="card-img-bottom" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock content%}

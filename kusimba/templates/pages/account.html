@@ -1,0 +1,44 @@
+  {% load static %}
+   <!-- Navbar Start -->
+    <div class="container-fluid">
+        <div class="row border-top px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+            <div class="col-lg-3">
+                <a href="/" class="text-decoration-none">
+                    <img src="{% static 'img/logos.jpeg' %}" style="height:75px;">
+                    <!-- <h1 class="m-0"><span class="text-primary">Ku</span>Simba</h1> -->
+                </a>
+            </div>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0" style="align-items: center;">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <img src="{% static 'img/logos.jpeg' %} " style="height:100px;">
+                        <!-- <h1 class="m-0"><span class="text-primary">E</span>COURSES</h1> -->
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav py-0">
+                            <a href="/" class="nav-item nav-link">Home</a>
+                            <a href="" class="nav-item nav-link">My Courses and Certificates</a>
+                            <a href="" class="nav-item nav-link">Certificate Planner</a>
+                            <a href="" class="nav-item nav-link">Course Finder</a>
+                        </div>
+                        <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle btn btn-success" data-toggle="dropdown">Account</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="{% url 'account' %}" class="dropdown-item">My Profile </a>
+                                    <a href="" class="dropdown-item">Payment Center</a>
+                                    <a href="" class="dropdown-item">My Wishlist</a>
+                                    <a href="" class="dropdown-item">Reset Password</a>
+                                    <a href="" class="dropdown-item">Logout</a>
+                                </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+   <!-- Navbar End -->

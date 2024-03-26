@@ -1,0 +1,52 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+
+{% block content%}
+{% include 'pages/navbar.html' %}
+<div class="container">
+    <div>
+        <h1> Course Details </h1>
+    </div>
+    <div class="row">
+
+        <div class="col-md-6">
+            <img src="{% static 'img/course-1.jpg' %}" class="img-fluid rounded">
+        </div>
+        <div class="col-md-5">
+            <h3>Course Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut leo sed ante faucibus tristique sit amet at sapien. Sed vehicula libero ut est sollicitudin, ut vestibulum ipsum pellentesque. Morbi eget tortor ac metus ullamcorper vehicula. Vivamus hendrerit ligula vel leo dictum, vel tincidunt purus dignissim. Fusce at urna vel justo hendrerit tincidunt. Proin vestibulum ipsum eu nisi aliquam, vel faucibus enim facilisis. Maecenas sit amet hendrerit purus, id dapibus eros. Integer in justo nec purus commodo tincidunt. Nullam nec ullamcorper mauris. Sed euismod nibh non tincidunt laoreet. Quisque auctor ligula ac lacus tempor, id sagittis risus feugiat. Suspendisse potenti.</p>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <ul class="nav justify-content-center border-5 border-bottom">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Takeaways</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Faculty</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link">Participants</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link">Reviews</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link">GetSmarter</a>
+              </li>
+        </ul>
+
+
+    </div>
+
+</div>
+{% include 'pages/footer.html' %}
+{% endblock content%}

@@ -1,0 +1,31 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+
+
+{% block content%}
+{% include 'pages/navbar.html' %}
+<style>
+  .header-image{
+  width: 90vw;
+  height: 50vh;
+  }
+</style>
+<div>
+  <div class="text-center">
+    <img src="{% static 'img/course-1.jpg' %}" class="rounded header-image">
+  </div>
+  <div class="container">
+    <h3 class="text-center mt-3"> Get yourself a Certificate </h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut leo sed ante faucibus tristique sit amet at sapien. Sed vehicula libero ut est sollicitudin, ut vestibulum ipsum pellentesque. Morbi eget tortor ac metus ullamcorper vehicula. Vivamus hendrerit ligula vel leo dictum, vel tincidunt purus dignissim. Fusce at urna vel justo hendrerit tincidunt. Proin vestibulum ipsum eu nisi aliquam, vel faucibus enim facilisis. Maecenas sit amet hendrerit purus, id dapibus eros. Integer in justo nec purus commodo tincidunt. Nullam nec ullamcorper mauris. Sed euismod nibh non tincidunt laoreet. Quisque auctor ligula ac lacus tempor, id sagittis risus feugiat. Suspendisse potenti.
+    </p>
+    <p>Sed quis mauris felis. Sed vel consequat eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sit amet viverra nunc, vitae fermentum odio. Duis suscipit ipsum vitae felis molestie, eget interdum velit ullamcorper. Ut posuere tellus sed nulla pharetra aliquet. Nam venenatis, justo vel fermentum rutrum, sapien neque porta mi, ut laoreet odio ex eget ex. Sed id elit luctus, fringilla nunc at, consequat nunc. In lobortis volutpat mauris, sit amet facilisis mi feugiat ac. Vivamus non dolor eu lectus scelerisque dignissim eget in enim. Donec non odio quis mauris sollicitudin consequat.
+    </p>
+    <p>Vestibulum id nisi vel turpis feugiat suscipit. Vivamus aliquam metus sit amet justo fermentum, id hendrerit odio tempor. Maecenas dictum malesuada leo, a ultricies sapien gravida non. Integer feugiat purus ac libero fermentum, sed fermentum ex volutpat. Mauris pulvinar mauris eget velit vestibulum, nec malesuada tortor laoreet. Sed quis massa tincidunt, tempor odio eget, tempus orci. Vivamus aliquam, nulla in laoreet tristique, nisi nisi accumsan metus, nec malesuada nisl tellus in nisi. Sed vel scelerisque metus. Cras at viverra leo. Suspendisse potenti. Vivamus vel mauris a dolor suscipit congue eget id neque. Nunc ut massa massa. Phasellus mollis nunc sit amet enim bibendum, a accumsan turpis congue. Sed efficitur lorem vitae nisi convallis, at ultricies nunc pharetra. Aenean vulputate sapien nec turpis mattis, eget faucibus mauris rhoncus.
+    </p>
+    <p>
+    <h2 class="text-center">more content</h2>
+    </p>
+  </div>
+</div>
+{% include 'pages/footer.html' %}
+{% endblock content%}
