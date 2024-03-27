@@ -1,47 +1,77 @@
 {% load static %}
-        <style>
-            .container {
-            display: flex;
-            flex-direction: row;
-            height: 100vh;
-            }
-
-            .sidebar {
-            width: 200px;
-            padding: 20px;
-            }
-
-            .content {
-            flex: 1;
-            padding: 20px;
-            }
-
-            @media only screen and (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-            .sidebar {
-                width: 100%;
-            }
-            }
-        </style>
-        <div class="container">
-        <div class="sidebar">
-            <h6>Course Topics</h6>
-            <label for="option1">
-            <input type="checkbox" id="option1"> Option 1
-            </label>
-            <label for="option2">
-            <input type="checkbox" id="option2"> Option 2
-            </label>
-            <label for="option3">
-            <input type="checkbox" id="option3"> Option 3
-            </label>
+<div class="container-fluid mt-3">
+  <h2> The Course Finder</h2>
+</div>
+<div align="right" class="">
+  <button class="btn btn-outline-success"><i class='bx bx-calendar fs-5'></i> <span class="fs-5">Calendar</span></button>
+</div>
+<div class="container-fluid p-1">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">All</button>
+              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Topics</button>
+              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Course Formats</button>
+              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Certificate Track</button>
+            </div>
+          </div>
         </div>
-        <div class="content">
-            <h2>Courses</h2>
-            <p>Courses content</p>
-            <div class="fs-1">Hello</div>
+        <div class="col-md-10">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+              <div class="row row-cols-1 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card">
+                    <img src="{% static 'img/course-1.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="{% static 'img/course-1.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="{% static 'img/course-1.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="{% static 'img/course-1.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+
+            </div>
+          </div>
         </div>
-        </div>
-        <!-- sidebar menu End -->
+      </div>
+</div>
